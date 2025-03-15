@@ -11,7 +11,7 @@ import {
 } from "class-validator";
 
 export class CreateArtistDto {
-  @ApiProperty({ example: "John Doe", type: String })
+  @ApiProperty({ example: "Suhas Roy", type: String })
   @IsNotEmpty()
   @IsString()
   @Transform(({ value }) => (typeof value === "string" ? value.trim() : value))
